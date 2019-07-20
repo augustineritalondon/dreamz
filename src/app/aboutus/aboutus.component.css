@@ -1,0 +1,21 @@
+.btn.shop {
+    background: #ec1c24;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    color: #fff;
+    padding: 0.6em 2.5em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.fontt{
+    letter-spacing: 1px;
+    font-family: 'Hind', sans-serif;
+}

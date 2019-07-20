@@ -1,0 +1,397 @@
+.main-sec{
+    background-image: initial;
+    background-color: #74d2e7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Hind', sans-serif;
+}
+
+p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.forms {
+    margin-top: 1.4em;
+}
+
+.top-w3pvt {
+    border-bottom: 1px solid #8bb4df;
+    padding-bottom: 0.5em;
+}
+
+.nav-top-wthree {
+    margin: 1em 0;
+}
+
+header a.btn {
+    border-radius: 4px;
+    color: black;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+}
+
+header a.btn span {
+    color: #fff;
+}
+
+.search-form {
+    width: 30%;
+}
+
+form.newsletter {
+    background: #fff;
+    padding: 0.3em;
+    display: flex;
+}
+
+header .search {
+    outline: none;
+    padding: 6px 20px;
+    font-size: 14px;
+    color: #000;
+    width: 85%;
+    background: transparent;
+    text-transform: capitalize;
+    border: none;
+    letter-spacing: 2px;
+    float: left;
+}
+
+header button.btn {
+    color: #fff;
+    border: none;
+    padding: 7px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    float: right;
+    cursor: pointer;
+    width: 15%;
+    font-size: 14px;
+    text-align: center;
+    background: #ec1c24;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    float: left;
+}
+
+
+#logo a {
+    float: left;
+    font-size: .8em;
+    display: initial;
+    margin: 0;
+    letter-spacing: 0px;
+    color: #333;
+    font-weight: 300;
+    padding: 3px 0;
+    border: none;
+}
+
+#logo a span {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-shadow: 3px 1px 3px rgba(19, 18, 18, 0.19);
+}
+
+.sub-des {
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.3em;
+    margin: 0;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-shadow: 3px 1px 3px rgba(78, 73, 73, 0.21);
+}
+
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+}
+
+nav a {
+    letter-spacing: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 0 1em;
+    color: #515152;
+    text-transform: uppercase;
+}
+
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+nav a:hover {
+    color: #ec1c24;
+}
+
+.menu li.active a {
+
+    color: #ec1c24;
+    font-weight: 600;
+}
+
+ nav ul ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    background: #fff;
+    padding: 10px;
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+ul.menu li span {
+    color: #fff;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 992px) {
+
+    /*	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	} */
+    .menu li.active a {
+        color: #3369e7;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav a {
+        color: #333;
+    }
+
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: inline-block;
+        padding: 9px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: none;
+        background-color: rgba(22, 21, 21, 0.43137254901960786);
+        color: #fff;
+        margin-bottom: 0;
+        cursor: pointer !important;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .toggle:hover {
+        color: #fff;
+        background-color: #3369e7;
+    }
+
+    .nav-top-w3pvt {
+        margin: 1em 0;
+        position: absolute;
+        width: 71%;
+    }
+
+
+    [id^=drop]:checked + ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 7px 0;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    nav a:hover {
+        color: #3369e7;
+    }
+
+    .login-icon {
+        text-align: center;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #fff;
+    }
+
+    nav ul ul li a {
+        font-size: 15px;
+    }
+
+    ul.inner-ul {
+        padding: 0 !important;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        float: left;
+        width: 48%;
+        position: absolute;
+        z-index: 99;
+    }
+
+}
